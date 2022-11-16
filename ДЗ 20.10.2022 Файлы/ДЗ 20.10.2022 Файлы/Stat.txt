@@ -1,0 +1,6 @@
+		File Statistics "fole.txt"
+Characters = 44
+Strings = 2
+Vowels = 14
+Consonants = 15
+Digits = 2

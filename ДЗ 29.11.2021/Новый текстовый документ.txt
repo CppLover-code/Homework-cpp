@@ -1,0 +1,67 @@
+// Вариант 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale (0, "RUS");
+	cout << "Сколько денег Саня тратит на кошек?\n";
+	cout << "^..^    ^..^   ^..^\n";
+
+	cout << "Cколько кошек у Сани?\n";
+	int cat; // переменная количество кошек
+	cin >> cat;
+
+	cout << "Сколько ест одна кошка?\n";
+	double number; // переменная количество съеденной еды
+	cin >> number; // указываем вещественное число через точку, например 0.3 или 0.512
+
+	cout << "Сколько стоит 1 кг корма?\n";
+	double cost; // переменная стоимость корма может быть указана цена с копейками, например 83.55
+	cin >> cost;
+
+	int day = 1;
+	int month = 30;
+	int year = 365;
+	 
+	double a = cat * number * cost * day;
+	double b = cat * number * cost * month;
+	double с = cat * number * cost * year;
+
+
+	cout << "Саня тратит в день\t" <<  a << "грн.\n";
+	cout << "Саня тратит в месяц\t" <<  b << "грн.\n";
+	cout << "Саня тратит в год\t" << с << "грн.\n";
+}
+
+
+// Вариант 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "RUS");
+	cout << "Сколько денег Саня тратит на кошек?\n";
+	cout << "^..^    ^..^   ^..^\n";
+
+	cout << "Cколько кошек у Сани?\n";
+	int cat; // переменная количество кошек
+	cin >> cat;
+
+	cout << "Сколько ест одна кошка?\n";
+	double number; // переменная количество съеденной еды
+	cin >> number; // указываем вещественное число через точку, например 0.3 или 0.512
+
+	cout << "Сколько стоит 1 кг корма?\n";
+	double cost; // переменная стоимость корма может быть указана цена с копейками, например 83.55
+	cin >> cost;
+
+	int day = 1;
+	int month = 30;
+	int year = 365;
+
+	cout << "Саня тратит в день\t" << cat * number * cost * day << "грн.\n";
+	cout << "Саня тратит в месяц\t" << cat * number * cost * month << "грн.\n";
+	cout << "Саня тратит в год\t" << cat * number * cost * year << "грн.\n";
+}
